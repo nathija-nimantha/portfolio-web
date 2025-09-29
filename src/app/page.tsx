@@ -326,10 +326,25 @@ export default function TerminalPortfolio() {
 
                 <TerminalCard title="interests.log">
                   <h3 className="text-xl font-mono text-primary mb-4">Interests</h3>
-                  <p className="font-mono text-sm leading-relaxed">
-                    Open source contribution, machine learning, cloud architecture, and emerging web technologies.
-                    Always learning and staying updated with industry trends.
-                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {[
+                      "Open Source Contribution",
+                      "Machine Learning",
+                      "Cloud Architecture", 
+                      "Emerging Web Technologies",
+                      "Industry Trends",
+                      "Software Engineering",
+                      "DevOps",
+                      "AI & Data Science"
+                    ].map((interest, index) => (
+                      <span 
+                        key={index} 
+                        className="px-3 py-1 bg-primary/20 text-primary text-sm font-mono rounded cursor-pointer hover:bg-primary hover:text-primary-foreground hover:scale-105 transform transition-all duration-200 hover:shadow-lg"
+                      >
+                        {interest}
+                      </span>
+                    ))}
+                  </div>
                 </TerminalCard>
               </div>
             </div>
@@ -443,7 +458,7 @@ export default function TerminalPortfolio() {
 
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.tags.map((tag, tagIndex) => (
-                      <span key={tagIndex} className="px-2 py-1 bg-primary/20 text-primary text-xs font-mono rounded">
+                      <span key={tagIndex} className="px-2 py-1 bg-primary/20 text-primary text-xs font-mono rounded cursor-pointer hover:bg-primary hover:text-primary-foreground hover:scale-105 transform transition-all duration-200 hover:shadow-lg">
                         {tag}
                       </span>
                     ))}
