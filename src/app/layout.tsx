@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`font-mono ${GeistSans.variable} ${GeistMono.variable} antialiased`}>
+      <body className={`font-mono ${GeistSans.variable} ${GeistMono.variable} antialiased`} suppressHydrationWarning={true}>
         <ThemeProvider>
           <Suspense fallback={null}>{children}</Suspense>
           <ThemeSwitch />
