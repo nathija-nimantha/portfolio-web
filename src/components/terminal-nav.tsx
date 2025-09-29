@@ -58,7 +58,7 @@ export default function TerminalNav() {
               <span className="text-primary">~$</span>
             </div>
           </div>
-          {/* Desktop Nav: visible on screens >= 1024px */}
+          {/* Desktop Nav */}
           <div className="hidden lg:flex items-center space-x-6">
             {navItems.map((item) => (
               <Tooltip key={item.id}>
@@ -77,7 +77,7 @@ export default function TerminalNav() {
               </Tooltip>
             ))}
           </div>
-          {/* Tablet/Mobile Nav Toggle: visible on screens < 1024px */}
+          {/* Tablet/Mobile Nav */}
           <div className="lg:hidden flex items-center">
             <button
               aria-label="Open menu"
@@ -89,7 +89,7 @@ export default function TerminalNav() {
             </button>
           </div>
         </div>
-        {/* Tablet/Mobile Menu: visible on screens < 1024px */}
+        {/* Tablet/Mobile Menu */}
         {showMobileMenu && (
           <div className="lg:hidden absolute top-16 left-0 w-full bg-background border-b border-border shadow-lg z-50 animate-in fade-in slide-in-from-top duration-300">
             <div className="py-2 px-2">
