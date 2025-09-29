@@ -203,20 +203,6 @@ The portfolio uses a carefully crafted color system with a rich palette of green
   - `#e4e4e4` - Alternative light gray
 - **Light Gray**: `#cecece` - Border gray
 
-#### Transparency Overlays
-- **Black Overlays**:
-  - `rgba(0,0,0,.25)` - 25% black overlay
-  - `rgba(0,0,0,.1)` - 10% subtle overlay  
-  - `rgba(0,0,0,.05)` - 5% minimal overlay
-  - `rgba(0,0,0,0)` - Transparent
-
-#### Chart Colors (Data Visualization)
-- **Chart-1**: Primary green variations
-- **Chart-2**: `oklch(0.5 0.12 160)` / `oklch(0.7 0.12 160)`
-- **Chart-3**: `oklch(0.6 0.1 180)` / `oklch(0.6 0.1 180)`
-- **Chart-4**: `oklch(0.45 0.13 120)` / `oklch(0.75 0.13 120)`
-- **Chart-5**: `oklch(0.55 0.11 140)` / `oklch(0.65 0.11 140)`
-
 ### Typography
 The portfolio uses a monospace-focused typography system to maintain the terminal aesthetic.
 
