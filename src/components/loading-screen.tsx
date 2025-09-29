@@ -7,11 +7,17 @@ export default function LoadingScreen({ onFinish }: { onFinish?: () => void }) {
   const [currentStep, setCurrentStep] = useState(0)
   const [displayedText, setDisplayedText] = useState<string[]>([])
   const [uptime, setUptime] = useState(0)
+  const [isClient, setIsClient] = useState(false)
+  
   useEffect(() => {
+    setIsClient(true)
+    const startTime = Math.floor(Date.now() / 1000)
+    setUptime(0)
+    
     const interval = setInterval(() => {
-      setUptime(Math.floor(Date.now() / 1000));
+      setUptime(Math.floor(Date.now() / 1000) - startTime);
     }, 1000);
-    setUptime(Math.floor(Date.now() / 1000));
+    
     return () => clearInterval(interval);
   }, []);
 
@@ -154,7 +160,7 @@ export default function LoadingScreen({ onFinish }: { onFinish?: () => void }) {
             <div>Kernel: React 18.2.0</div>
             <div>Shell: /bin/nextjs</div>
             <div>Memory: 512MB / 1GB</div>
-            <div>Uptime: {uptime} seconds</div>
+            <div>Uptime: {isClient ? uptime : 0} seconds</div>
             <div className="pt-2 md:pt-4">
               <div className="text-primary text-xs md:text-sm mb-1 md:mb-2">LOADED MODULES</div>
               <div className="space-y-1 text-[10px] md:text-xs">
