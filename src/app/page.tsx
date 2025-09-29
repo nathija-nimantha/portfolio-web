@@ -78,6 +78,13 @@ function ContactForm() {
 export default function TerminalPortfolio() {
   const [isLoaded, setIsLoaded] = useState(false)
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact')
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   const experiences = [
     {
       startDate: "2024-12-01",
@@ -249,12 +256,16 @@ export default function TerminalPortfolio() {
           </div>
 
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <Button className="font-mono bg-primary text-primary-foreground hover:bg-primary/90">
+            <Button 
+              onClick={scrollToContact}
+              className="font-mono bg-primary text-primary-foreground hover:bg-primary/90"
+            >
               <Mail className="w-4 h-4 mr-2" />
               Contact me
             </Button>
             <a
-              href="mailto:nathija.jayasinghe@gmail.com"
+              href="/docs/CV.pdf"
+              download="Nathija_Nimantha_CV.pdf"
               className="inline-flex items-center font-mono border border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent px-4 py-2 rounded transition-colors duration-200"
             >
               <Download className="w-4 h-4 mr-2" />
@@ -286,7 +297,7 @@ export default function TerminalPortfolio() {
       <section id="about" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <AnimatedSection delay={0.2}>
-            <h2 className="text-4xl font-mono font-bold text-primary mb-12 terminal-prompt">about</h2>
+            <h2 className="text-4xl font-mono font-bold text-primary mb-12 terminal-prompt">about_</h2>
 
             <div className="grid md:grid-cols-2 gap-12">
               <div className="space-y-6">
@@ -330,7 +341,7 @@ export default function TerminalPortfolio() {
       <section id="experience" className="py-20 px-4 bg-secondary/10">
         <div className="max-w-6xl mx-auto">
           <AnimatedSection delay={0.3}>
-            <h2 className="text-4xl font-mono font-bold text-primary mb-12 terminal-prompt">experience</h2>
+            <h2 className="text-4xl font-mono font-bold text-primary mb-12 terminal-prompt">experience_</h2>
 
             <div className="relative">
               {/* Timeline line */}
@@ -397,7 +408,7 @@ export default function TerminalPortfolio() {
       <section id="skills" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <AnimatedSection delay={0.4}>
-            <h2 className="text-4xl font-mono font-bold text-primary mb-12 terminal-prompt">skills</h2>
+            <h2 className="text-4xl font-mono font-bold text-primary mb-12 terminal-prompt">skills_</h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {skills.map((skillGroup, index) => (
@@ -422,7 +433,7 @@ export default function TerminalPortfolio() {
       <section id="projects" className="py-20 px-4 bg-secondary/10">
         <div className="max-w-6xl mx-auto">
           <AnimatedSection delay={0.5}>
-            <h2 className="text-4xl font-mono font-bold text-primary mb-12 terminal-prompt">projects</h2>
+            <h2 className="text-4xl font-mono font-bold text-primary mb-12 terminal-prompt">projects_</h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {projects.map((project, index) => (
@@ -441,14 +452,14 @@ export default function TerminalPortfolio() {
                   <div className="flex space-x-3">
                     {project.hasLive && project.liveUrl && (
                       <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                        <Button size="sm" className="font-mono text-xs project-btn-live">
+                        <Button size="sm" className="font-mono text-xs bg-primary text-primary-foreground hover:bg-card hover:text-primary hover:border-primary border border-transparent project-btn-live">
                           Live Demo
                         </Button>
                       </a>
                     )}
                     {project.hasCode && project.codeUrl && (
                       <a href={project.codeUrl} target="_blank" rel="noopener noreferrer">
-                        <Button size="sm" variant="outline" className="font-mono text-xs bg-transparent project-btn-code">
+                        <Button size="sm" className="font-mono text-xs bg-transparent border-1 border-primary text-primary hover:bg-primary hover:text-primary-foreground project-btn-code">
                           View Code
                         </Button>
                       </a>
@@ -465,7 +476,7 @@ export default function TerminalPortfolio() {
       <section id="education" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <AnimatedSection delay={0.6}>
-            <h2 className="text-4xl font-mono font-bold text-primary mb-12 terminal-prompt">education</h2>
+            <h2 className="text-4xl font-mono font-bold text-primary mb-12 terminal-prompt">education_</h2>
 
             <div className="relative">
               {/* Timeline line */}
@@ -532,7 +543,7 @@ export default function TerminalPortfolio() {
       <section id="contact" className="py-20 px-4 bg-secondary/10">
         <div className="max-w-6xl mx-auto">
           <AnimatedSection delay={0.7}>
-            <h2 className="text-4xl font-mono font-bold text-primary mb-12 terminal-prompt">contact</h2>
+            <h2 className="text-4xl font-mono font-bold text-primary mb-12 terminal-prompt">contact_</h2>
 
             <div className="grid lg:grid-cols-2 gap-12">
               {/* Contact Form */}
@@ -549,7 +560,7 @@ export default function TerminalPortfolio() {
                       <Mail className="w-5 h-5 text-primary" />
                       <a
                         href="mailto:nathija.jayasinghe@gmail.com"
-                        className="font-mono text-primary hover:underline"
+                        className="font-mono text-muted-foreground hover:text-primary transition-colors duration-300"
                       >
                         nathija.jayasinghe@gmail.com
                       </a>
@@ -560,7 +571,7 @@ export default function TerminalPortfolio() {
                         href="https://maps.app.goo.gl/WxDeZmFWGLD6fZ9H8"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="font-mono text-primary hover:underline"
+                        className="font-mono text-muted-foreground hover:text-primary transition-colors duration-300"
                       >
                         Sri Lanka
                       </a>
@@ -569,7 +580,7 @@ export default function TerminalPortfolio() {
                       <Phone className="w-5 h-5 text-primary" />
                       <a
                         href="tel:+94761231133"
-                        className="font-mono text-primary hover:underline"
+                        className="font-mono text-muted-foreground hover:text-primary transition-colors duration-300"
                       >
                         +94 76 123 1133
                       </a>
