@@ -258,7 +258,7 @@ export default function TerminalPortfolio() {
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <Button 
               onClick={scrollToContact}
-              className="font-mono bg-primary text-primary-foreground hover:bg-primary/90"
+              className="font-mono bg-primary text-primary-foreground hover:bg-card hover:text-primary hover:border-primary border border-transparent"
             >
               <Mail className="w-4 h-4 mr-2" />
               Contact me
