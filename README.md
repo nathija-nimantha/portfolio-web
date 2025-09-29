@@ -1,18 +1,18 @@
 # Next.js Terminal Portfolio
 
-A sophisticated, terminal-inspired portfolio website that showcases professional experience and projects through an innovative command-line interface. Built with modern web technologies to deliver a unique user experience that combines nostalgia with contemporary design principles.
+A sophisticated, terminal-inspired portfolio website that showcases professional experience and projects through a visually striking terminal aesthetic. Built with modern web technologies to deliver a unique user experience that combines nostalgic terminal design with contemporary web principles.
 
 ## 🎨 Design Philosophy
 
-This portfolio reimagines the traditional portfolio website by drawing inspiration from terminal interfaces and command-line environments. The design creates an immersive experience where visitors navigate through different sections using terminal-style commands, making the exploration of professional content both engaging and memorable.
+This portfolio reimagines the traditional portfolio website by drawing visual inspiration from terminal interfaces and command-line environments. The design creates an immersive experience with terminal-styled visual elements, making the exploration of professional content both engaging and memorable through its unique aesthetic.
 
 ## ✨ Key Features
 
-### 🖥️ Terminal-Inspired Interface
-- **Command-Line Navigation**: Navigate through sections using terminal commands like `cd ~/`, `cat about.txt`, `ls projects/`
-- **Terminal Cards**: Information displayed in terminal-style windows with authentic command prompts
-- **Interactive Command Preview**: Hover effects show corresponding terminal commands for each navigation item
-- **Realistic Terminal Styling**: Monospace fonts, and terminal color schemes
+### 🖥️ Terminal-Inspired Visual Design
+- **Terminal-Style Navigation**: Visually styled navigation elements that mimic terminal interfaces
+- **Terminal Cards**: Information displayed in terminal-style windows with visual command prompt styling
+- **Terminal Visual Elements**: Hover effects and visual cues that reference terminal aesthetics
+- **Authentic Terminal Styling**: Monospace fonts, terminal color schemes, and classic terminal visual elements
 
 ### 🎭 Advanced Animations & Interactions
 - **Scroll-Triggered Animations**: Sections animate into view as users scroll, creating dynamic content reveals
@@ -51,12 +51,12 @@ This portfolio reimagines the traditional portfolio website by drawing inspirati
 - **ESLint Configuration**: Maintained code quality with comprehensive linting rules
 - **PostCSS Processing**: Advanced CSS processing for optimal stylesheet generation
 
-## � Portfolio Sections
+## 🌟 Portfolio Sections
 
 ### 🏠 Home Section
 - **Hero Introduction**: Dynamic welcome message with terminal-style typing animations
 - **Professional Title**: Full Stack Software Engineer designation with animated text reveals
-- **Terminal Prompt**: Interactive command prompt that sets the tone for the entire experience
+- **Terminal-Style Prompt**: Visual terminal prompt styling that sets the aesthetic tone for the experience
 - **Social Links**: GitHub, LinkedIn, and other professional profiles with hover animations
 
 ### 👤 About Section  
@@ -87,7 +87,7 @@ This portfolio reimagines the traditional portfolio website by drawing inspirati
 ### 🎓 Education Section
 - **Certifications**: Relevant technical certifications and achievements
 - **Learning Journey**: Continuous education and skill development path
-- **Terminal-Style Display**: Educational information presented in command-line format
+- **Terminal-Style Display**: Educational information presented with terminal visual styling
 
 ### 📧 Contact Section
 - **Interactive Contact Form**: Fully functional contact form with real-time validation
@@ -111,11 +111,11 @@ This portfolio reimagines the traditional portfolio website by drawing inspirati
 - **Card Hover Effects**: Project cards lift and highlight on mouse interaction
 - **Form Input Focus**: Enhanced visual feedback for form field interactions
 
-### Terminal-Specific Animations
+### Terminal-Style Animations
 - **Typing Effects**: Simulated typing animations for dynamic text content
 - **Cursor Blinking**: Authentic terminal cursor animation throughout the interface
-- **Command Execution**: Visual feedback when navigating between sections
-- **Terminal Boot Sequence**: Loading screen that mimics system startup process
+- **Terminal-Style Transitions**: Visual feedback styled like terminal interfaces when navigating
+- **Terminal Boot Sequence**: Loading screen that visually mimics system startup process
 
 ### Theme Transition Animations
 - **Color Morphing**: Smooth color transitions when switching between light and dark themes
@@ -148,6 +148,103 @@ This portfolio reimagines the traditional portfolio website by drawing inspirati
 - **Mobile Optimization**: Touch-friendly interactions and mobile-first responsive design
 - **Device Adaptation**: Intelligent layout adjustments for various screen sizes and orientations
 - **Progressive Enhancement**: Core functionality works across different capability levels
+
+## 🎨 Design System
+
+### Color Palette
+The portfolio uses a carefully crafted color system with a rich palette of greens, blues, and neutrals that creates the visual terminal aesthetic while maintaining excellent readability and visual hierarchy.
+
+#### Primary Colors
+- **White**: `#fff` - Pure white backgrounds and text
+- **Black Variants**: 
+  - `#020202` - Deepest black
+  - `#060606` - Very dark gray
+  - `#0b0b0b` - Dark background
+  - `#161616` - Card backgrounds
+  - `#030303` - Alternative dark
+
+#### Terminal Green Palette
+- **Dark Green**: `#005900` - Deep terminal green
+- **Sea Green Variants**:
+  - `#5c8f57` - Medium sea green
+  - `#00774c` - Dark sea green
+  - `#4c8141` - Muted green
+  - `#6aa05e` - Bright green accent
+- **Light Green**: `#82d67a` - Light terminal green
+- **Medium Sea Green**: `#50b584` - Balanced green
+- **Dark Cyan**: `#239382` - Cyan accent
+
+#### Homepage Specific Colors
+- **Dark Sea Green**: `rgb(108, 159, 103)` - Main green theme
+- **Dark Sea Green Alt**: `rgb(146, 171, 125)` - Lighter variant
+- **Dark Slate Gray Variants**:
+  - `rgb(76, 95, 74)` - Muted gray-green
+  - `rgb(49, 75, 51)` - Dark gray-green
+  - `rgb(71, 89, 108)` - Blue-tinted gray
+  - `rgb(40, 51, 59)` - Dark slate
+  - `rgb(40, 48, 38)` - Very dark green
+  - `rgb(19, 42, 18)` - Deep forest green
+
+#### Accent Colors
+- **Goldenrod**: `#edb200` - Warning/highlight yellow
+- **Cornflower Blue**: `#54a2ff` - Light blue accent
+- **Royal Blue**: `#3080ff` - Command blue
+- **Red**: `#e40014` - Error/destructive actions
+- **Crimson**: `#de3b3d` - Alternative red
+- **Dark Khaki**: `#a3ba55` - Olive accent
+- **Dark Olive Green**: `#4e5e00` - Dark olive
+
+#### Neutral Grays
+- **Whitesmoke Variants**:
+  - `#f8f8f8` - Very light gray
+  - `#eee` - Light gray backgrounds
+- **Gainsboro Variants**:
+  - `#dedede` - Medium light gray
+  - `#e4e4e4` - Alternative light gray
+- **Light Gray**: `#cecece` - Border gray
+
+#### Transparency Overlays
+- **Black Overlays**:
+  - `rgba(0,0,0,.25)` - 25% black overlay
+  - `rgba(0,0,0,.1)` - 10% subtle overlay  
+  - `rgba(0,0,0,.05)` - 5% minimal overlay
+  - `rgba(0,0,0,0)` - Transparent
+
+#### Chart Colors (Data Visualization)
+- **Chart-1**: Primary green variations
+- **Chart-2**: `oklch(0.5 0.12 160)` / `oklch(0.7 0.12 160)`
+- **Chart-3**: `oklch(0.6 0.1 180)` / `oklch(0.6 0.1 180)`
+- **Chart-4**: `oklch(0.45 0.13 120)` / `oklch(0.75 0.13 120)`
+- **Chart-5**: `oklch(0.55 0.11 140)` / `oklch(0.65 0.11 140)`
+
+### Typography
+The portfolio uses a monospace-focused typography system to maintain the terminal aesthetic.
+
+#### Primary Font Stack
+- **Geist Mono**: Primary monospace font for all terminal-style text
+- **Geist Sans**: Secondary font for modern UI elements
+- **Monaco, Liberation Mono, Menlo, Consolas**: Fallback monospace fonts
+- **Courier New, monospace**: System fallbacks
+
+#### Font Usage
+- **Headers**: Geist Mono Bold - Terminal section titles
+- **Body Text**: Geist Mono Regular - All content text
+- **UI Elements**: Geist Sans - Modern interface components
+- **Code/Terminal**: Geist Mono - Terminal commands and code blocks
+
+#### Font Weights
+- **Light (300)**: Subtle text elements
+- **Regular (400)**: Standard body text
+- **Medium (500)**: Emphasized text
+- **Semibold (600)**: Subheadings
+- **Bold (700)**: Main headings and highlights
+
+### Terminal Theme Elements
+- **Cursor**: Blinking block cursor (`█`) with primary color
+- **Prompt**: Green `$` symbol for command prompts
+- **Window Controls**: Red, yellow, green dots mimicking terminal windows
+- **Borders**: Consistent border-radius of `0.375rem` (6px)
+- **Shadows**: Subtle box-shadows for depth and layering
 
 ## 🌟 Unique Features
 
