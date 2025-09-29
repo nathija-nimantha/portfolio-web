@@ -83,7 +83,7 @@ export default function LoadingScreen({ onFinish }: { onFinish?: () => void }) {
     }
 
     processSteps()
-  }, [])
+  }, [loadingSteps, onFinish])
 
   if (!isLoading) return null
 
@@ -106,7 +106,6 @@ export default function LoadingScreen({ onFinish }: { onFinish?: () => void }) {
             className="space-y-1 font-mono text-xs md:text-sm overflow-y-auto bg-card rounded mb-2 hide-scrollbar"
             style={{ maxHeight: '45vh', minHeight: '8rem', paddingRight: '0.5rem' }}
           >
-            {/* ASCII Art Header inside scrollable area */}
             <div className="text-primary font-mono text-[10px] md:text-xs leading-tight mb-2 md:mb-4 opacity-80">
               <pre className="whitespace-pre">{asciiArt}</pre>
             </div>

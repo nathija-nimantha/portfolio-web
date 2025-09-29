@@ -1,6 +1,6 @@
 
 "use client"
-import { useRef, useState, useEffect } from "react"
+import { useRef, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -302,16 +302,16 @@ export default function TerminalPortfolio() {
             <div className="grid md:grid-cols-2 gap-12">
               <div className="space-y-6">
                 <p className="text-lg font-mono leading-relaxed">
-                  Hello, I'm Nathija Nimantha Jayasinghe, a passionate Full Stack Software Engineer with practical experience in modern web and mobile development.
+                  Hello, I&apos;m Nathija Nimantha Jayasinghe, a passionate Full Stack Software Engineer with practical experience in modern web and mobile development.
                 </p>
                 <p className="text-lg font-mono leading-relaxed">
-                  I'm proficient in core technologies like JavaScript, TypeScript, and React, with strong backend capabilities in Node.js, Python, and Spring Boot. I also have expertise in cross-platform mobile development using Flutter.
+                  I&apos;m proficient in core technologies like JavaScript, TypeScript, and React, with strong backend capabilities in Node.js, Python, and Spring Boot. I also have expertise in cross-platform mobile development using Flutter.
                 </p>
                 <p className="text-lg font-mono leading-relaxed">
                   I completed an intensive Full Stack Software Engineering Program and contributed to production-level projects during my time as a Trainee Software Engineer at SYIGEN (Pvt) Ltd. This professional experience, from December 2024 to June 2025, provided me with comprehensive cross-functional exposure where I rotated through roles such as BA, QA, TL, and PM, and actively participated in Agile/Scrum ceremonies.
                 </p>
                 <p className="text-lg font-mono leading-relaxed">
-                  My background has equipped me with strong problem-solving skills and a solid foundation in project management and cross-functional teamwork. I'm passionate about building scalable, user-focused applications and am currently expanding my knowledge in machine learning.
+                  My background has equipped me with strong problem-solving skills and a solid foundation in project management and cross-functional teamwork. I&apos;m passionate about building scalable, user-focused applications and am currently expanding my knowledge in machine learning.
                 </p>
               </div>
 
@@ -349,13 +349,13 @@ export default function TerminalPortfolio() {
 
               {experiences.map((exp, index) => (
                 <div key={index} className="relative flex items-center mb-0">
-                  {/* Timeline line (centered) */}
+                  {/* Timeline line */}
                   <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-border"></div>
 
                   {/* Timeline dot */}
                   <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-background z-10"></div>
 
-                  {/* Connector line from card to dot (left or right of dot) */}
+                  {/* Connector line */}
                   {index % 2 === 0 && (
                     <div className="absolute top-1/2 left-[calc(50%-0.5rem)] transform -translate-y-1/2 w-6 h-0.5 bg-border -ml-3"></div>
                   )}
@@ -484,13 +484,12 @@ export default function TerminalPortfolio() {
 
               {education.map((edu, index) => (
                 <div key={index} className="relative flex items-center mb-0">
-                  {/* Timeline line (centered) */}
+                  {/* Timeline line */}
                   <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-border"></div>
 
                   {/* Timeline dot */}
                   <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-background z-10"></div>
 
-                  {/* Connector line from card to dot (left or right of dot) */}
                   {index % 2 === 0 && (
                     <div className="absolute top-1/2 left-[calc(50%-0.5rem)] transform -translate-y-1/2 w-6 h-0.5 bg-border -ml-3"></div>
                   )}
@@ -648,7 +647,7 @@ export default function TerminalPortfolio() {
       <footer className="py-8 px-4 border-t border-border">
         <div className="max-w-6xl mx-auto text-center">
           <p className="font-mono text-muted-foreground">
-            <span className="text-primary">$</span> echo "© 2025 Nathija Nimantha. All rights reserved."
+            <span className="text-primary">$</span> echo &quot;© 2025 Nathija Nimantha. All rights reserved.&quot;
           </p>
         </div>
       </footer>
