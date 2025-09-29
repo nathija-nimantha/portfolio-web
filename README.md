@@ -12,14 +12,13 @@ This portfolio reimagines the traditional portfolio website by drawing inspirati
 - **Command-Line Navigation**: Navigate through sections using terminal commands like `cd ~/`, `cat about.txt`, `ls projects/`
 - **Terminal Cards**: Information displayed in terminal-style windows with authentic command prompts
 - **Interactive Command Preview**: Hover effects show corresponding terminal commands for each navigation item
-- **Realistic Terminal Styling**: Complete with cursor animations, monospace fonts, and terminal color schemes
+- **Realistic Terminal Styling**: Monospace fonts, and terminal color schemes
 
 ### 🎭 Advanced Animations & Interactions
 - **Scroll-Triggered Animations**: Sections animate into view as users scroll, creating dynamic content reveals
 - **Loading Screen Animation**: Custom terminal boot sequence that introduces the portfolio experience
 - **Smooth Transitions**: Fluid page transitions and element animations throughout the interface
 - **Hover Effects**: Interactive elements respond with subtle animations and visual feedback
-- **Terminal Cursor**: Blinking cursor animations that enhance the authentic terminal feel
 
 ### 🌓 Theme System
 - **Dark/Light Mode Toggle**: Seamless switching between dark terminal and light modern themes
@@ -67,7 +66,6 @@ This portfolio reimagines the traditional portfolio website by drawing inspirati
 - **Technical Philosophy**: Approach to problem-solving and software development
 
 ### 💼 Experience Section
-- **SYIGEN (Pvt) Ltd Experience**: Trainee Software Engineer role (December 2024 - June 2025)
 - **Cross-Functional Exposure**: Experience across BA, QA, TL, and PM roles
 - **Agile/Scrum Participation**: Active involvement in modern development methodologies
 - **Production-Level Projects**: Contribution to real-world software solutions
@@ -78,7 +76,6 @@ This portfolio reimagines the traditional portfolio website by drawing inspirati
 - **Frontend Technologies**: React, Next.js, TypeScript, HTML5, CSS3, JavaScript
 - **Backend Technologies**: Node.js, Express, databases, and server-side technologies
 - **Development Tools**: Git, VS Code, development workflow tools
-- **Visual Skill Indicators**: Interactive skill level representations with animations
 
 ### 🚀 Projects Section
 - **Featured Projects**: Curated selection of significant development work
@@ -88,7 +85,6 @@ This portfolio reimagines the traditional portfolio website by drawing inspirati
 - **Project Animations**: Smooth hover effects and transition animations for project exploration
 
 ### 🎓 Education Section
-- **Full Stack Software Engineering Program**: Comprehensive training background
 - **Certifications**: Relevant technical certifications and achievements
 - **Learning Journey**: Continuous education and skill development path
 - **Terminal-Style Display**: Educational information presented in command-line format
@@ -155,17 +151,10 @@ This portfolio reimagines the traditional portfolio website by drawing inspirati
 
 ## � Unique Features
 
-### Terminal Authentication
-- **Realistic Terminal Behavior**: Accurate command-line interface simulation with proper syntax highlighting
-- **Command History**: Navigation maintains command history for authentic terminal experience
-- **Auto-completion**: Smart command suggestions and tab completion functionality
-- **Error Handling**: Realistic terminal error messages and command validation
-
 ### Interactive Elements
 - **Dynamic Content Loading**: Sections load with terminal-style command execution animations
 - **Real-time Status Updates**: Live feedback for form submissions and interactions
 - **Context-Aware Navigation**: Navigation adapts based on current section and user interaction
-- **Keyboard Shortcuts**: Terminal-inspired keyboard navigation and shortcuts
 
 ### Professional Presentation
 - **Technical Project Showcase**: Detailed technical specifications and architecture explanations
