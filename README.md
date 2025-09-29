@@ -149,7 +149,7 @@ This portfolio reimagines the traditional portfolio website by drawing inspirati
 - **Device Adaptation**: Intelligent layout adjustments for various screen sizes and orientations
 - **Progressive Enhancement**: Core functionality works across different capability levels
 
-## � Unique Features
+## 🌟 Unique Features
 
 ### Interactive Elements
 - **Dynamic Content Loading**: Sections load with terminal-style command execution animations
