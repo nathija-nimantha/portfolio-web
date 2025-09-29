@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState, useRef } from "react"
+import { useEffect, useState, useRef, useMemo } from "react"
 
 export default function LoadingScreen({ onFinish }: { onFinish?: () => void }) {
   const [isLoading, setIsLoading] = useState(true)
@@ -39,7 +39,7 @@ export default function LoadingScreen({ onFinish }: { onFinish?: () => void }) {
        ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝
   `
 
-  const loadingSteps = [
+  const loadingSteps = useMemo(() => [
     { message: "$ sudo systemctl start portfolio.service", delay: 800 },
     { message: "[  OK  ] Started Portfolio Service", delay: 600 },
     { message: "$ loading kernel modules...", delay: 700 },
@@ -58,9 +58,8 @@ export default function LoadingScreen({ onFinish }: { onFinish?: () => void }) {
     { message: "$ portfolio.service: ready", delay: 1000 },
     { message: "Welcome to Terminal Portfolio v2.0.1", delay: 1000 },
     { message: "Opening portfolio...", delay: 2000 },
-  ]
+  ], [])
 
-  // Prevent double effect execution in React Strict Mode
   const hasRunRef = useRef(false)
   useEffect(() => {
     if (hasRunRef.current) return
@@ -100,7 +99,7 @@ export default function LoadingScreen({ onFinish }: { onFinish?: () => void }) {
           <span className="ml-2 md:ml-4 text-xs text-muted-foreground">Terminal Portfolio Boot Sequence</span>
         </div>
         <div className="flex-1 flex flex-col justify-start px-2 md:pl-8 md:pr-4 pt-10 md:pt-12 pb-6 md:pb-10 min-w-0">
-          {/* Scrollable Terminal Area: ASCII Art + Messages */}
+          {/* Scrollable Terminal Area */}
           <div
             ref={messagesContainerRef}
             className="space-y-1 font-mono text-xs md:text-sm overflow-y-auto bg-card rounded mb-2 hide-scrollbar"
