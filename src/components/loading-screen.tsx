@@ -56,8 +56,8 @@ export default function LoadingScreen({ onFinish }: { onFinish?: () => void }) {
     { message: "$ starting user interface daemon...", delay: 800 },
     { message: "[  OK  ] UI daemon started successfully", delay: 600 },
     { message: "$ portfolio.service: ready", delay: 1000 },
-    { message: "Welcome to Terminal Portfolio v2.0.1", delay: 1000 },
-    { message: "Opening portfolio...", delay: 2000 },
+    { message: "Welcome to Terminal Portfolio v2.0.2", delay: 1000 },
+    { message: "Opening Portfolio-Web...", delay: 2000 },
   ], [])
 
   const hasRunRef = useRef(false)
